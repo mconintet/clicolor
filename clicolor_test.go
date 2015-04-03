@@ -6,6 +6,6 @@ import (
 )
 
 func TestColorString(t *testing.T) {
-	colorized, _ := ColorizeStr("Golang", "white", "blue")
+	colorized, _ := Colorize("Golang", "white", "blue")
 	fmt.Println(colorized)
 }

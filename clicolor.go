@@ -45,7 +45,7 @@ func hasBackgroundColor(color string) bool {
 	return ok
 }
 
-func ColorizeStr(str, foreground, background string) (string, error) {
+func Colorize(str, foreground, background string) (string, error) {
 	if !hasForegroundColor(foreground) {
 		return "", errors.New("unsupported foreground color: " + foreground)
 	}
