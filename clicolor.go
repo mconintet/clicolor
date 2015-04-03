@@ -1,7 +1,6 @@
 package clicolor
 
 import (
-	"errors"
 	"fmt"
 )
 
