@@ -45,14 +45,14 @@ func hasBackgroundColor(color string) bool {
 	return ok
 }
 
-func Colorize(str, foreground, background string) (string, error) {
+func Colorize(str, foreground, background string) string {
 	if !hasForegroundColor(foreground) {
-		return "", errors.New("unsupported foreground color: " + foreground)
+		foreground = "white"
 	}
 
 	if !hasBackgroundColor(background) {
-		return "", errors.New("unsupported background color: " + background)
+		background = "black"
 	}
 
-	return fmt.Sprintf("\033[%sm\033[%sm%s\033[0m", foregroundColors[foreground], backgroundColors[background], str), nil
+	return fmt.Sprintf("\033[%sm\033[%sm%s\033[0m", foregroundColors[foreground], backgroundColors[background], str)
 }
