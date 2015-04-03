@@ -10,4 +10,4 @@ fmt.Println(colorized)
 ```
 
 ## Screenshot
-![alt screenshot](https://github.com/mconintet/clicolor/blob/master/screenshot.gif?raw=true)
+![alt screenshot](https://github.com/mconintet/clicolor/blob/master/screenshot.png?raw=true)
